@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/base.css' %}" type="text/css" rel="stylesheet"> 
+        {% block css %}
+        {%endblock%}
+    </head>
+    <body>
+        <div class="container">
+            <img src="{% static '1009.jpg' %}" width=250 height=250>
+            <div class="link">
+                <li><a href="{% url 'home' %}">Blog</a>
+                    <ul>
+                        <li><a href="{% url 'blogpost' %}" id="under">write</a></li> 
+                    </ul>
+                </li>
+                <br>
+                <p><a href="{% url 'album' %}">Album</a></p>
+            </div>
+            <div class="block">
+                {% block content %}
+                {%endblock%}
+            </div>
+        </div>
+    </body>
+</html>

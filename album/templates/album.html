@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="{% static 'css/album.css' %}" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <img src="{% static '1009.jpg' %}" width=250 height=250>
+            <div class="link">
+                <a href="{% url 'home' %}">Blog</a>
+                <br><br><br>
+                <li><a href="{% url 'album' %}">Album</a>
+                    <ul>
+                        <form action="{% url 'create' %}" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="filebox">
+                                <label for="img">upload</label>
+                                <input type="file" name="image" id="img">
+                            </div>
+                            <input class="btn" type="submit" value="submit">
+                        </form>
+                    </ul>
+                </li>
+            </div>
+            <div class="block">
+                {% for album in albums.all %}
+                    <img src="{{album.image.url}}">
+                    <span><a href="{% url 'deleteimg' album.id %}">삭제</a></span>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

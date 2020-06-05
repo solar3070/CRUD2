@@ -1,0 +1,34 @@
+.block {
+    overflow:scroll;
+    overflow-x:hidden;
+    scrollbar-face-color:#FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+}
+
+.box, .text {
+    display: flex;
+}
+
+.UD {
+    display: flex;
+}
+
+.text p {
+    display: flex;
+}
+
+#date {
+    width: 80px;
+}
+
+#title {
+    width:325px;
+}
+
+.UD a:link, .UD a:visited {
+    color:rgb(177, 110, 116);
+}
+
+.UD p {
+    margin-right:5px;
+}

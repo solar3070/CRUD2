@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link href="{% static 'css/detail.css' %}" type="text/css" rel="stylesheet">{% endblock %}
+
+{% block content %}
+    <div class="text">
+        <h1>{{detail.title}}</h1>
+        <hr>
+        <p>{{detail.pub_date}}</p>
+        <hr>
+        <p>{{detail.body|linebreaksbr}}</p>
+    </div>
+{% endblock %}

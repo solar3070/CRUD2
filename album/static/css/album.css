@@ -1,0 +1,96 @@
+@font-face { font-family: 'Cafe24Oneprettynight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    background-color:rgba(146, 69, 75, 1);
+}
+
+.block {
+    width: 500px;
+    height: 470px;
+    margin:62px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    overflow:scroll;
+    overflow-x:hidden;
+    scrollbar-face-color:rgba(146, 69, 75, 1);
+    scrollbar-track-color: rgba(146, 69, 75, 1);
+    scrollbar-shadow-color: rgba(146, 69, 75, 1);
+    scrollbar-arrow-color: rgba(146, 69, 75, 1);
+    text-align: center;
+}
+
+.container {
+    display:flex;
+}
+
+img {
+    margin:80px 120px 100px 320px
+}
+
+.link {
+    display:block;
+    position:absolute;
+    left:435px;
+    top:370px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size:14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+a:link, a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: none;
+    width:5px;
+    position: relative;
+    left:-5px;
+}
+
+.link li:hover ul {
+    display: block;
+}
+
+.btn, .filebox label {
+    font-family: 'Arvo', serif;
+    font-size:14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(146, 69, 75, 1);
+    border: none;
+}
+
+.btn:hover, .filebox label:hover, .block a:hover {
+    color: rgb(201, 152, 156);
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);   
+}
+
+.block img {
+    margin:20px 10px 0px 10px;
+    width:210px;
+    height:210px;
+}
+
+.block img:hover {
+    opacity:0.4;
+}
+
+form {
+    display: flex;
+    width:150px;
+}
+
+.block span {
+    font-family: 'Cafe24Oneprettynight';
+    font-size:14px;
+    color:white;
+}

@@ -1,0 +1,73 @@
+
+
+.block {
+    width: 500px;
+    height: 500px;
+    font-size: 14px;
+    font-family: 'Cafe24Oneprettynight';
+    padding: 10px 20px 0px 20px;
+    background-color: white;
+    margin-top: 78px;
+    text-align: center;
+}
+
+.container {
+    display:flex;
+}
+
+img {
+    margin:80px 70px 100px 320px
+}
+
+.link {
+    display:block;
+    position:absolute;
+    left:435px;
+    top:370px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size:14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.link a:link, .link a:visited {
+    color:white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: none;
+    width:5px;
+    position: relative;
+    left:-5px;
+}
+
+.link li:hover ul {
+    display: block;
+}
+
+.btn {
+    border: 1px solid rgba(146, 69, 75, 1);
+    padding: 5px;
+    font-family: 'Cafe24Oneprettynight';
+    border-radius: 5px;
+    background-color:rgba(146, 69, 75, 1);
+    color: white; 
+  }
+
+.btn:hover { 
+    background-color: white; 
+    color: rgba(146, 69, 75, 1);
+}
+
+hr {
+    border:none;
+    height:0.6px;
+    background-color:rgb(187, 187, 187);
+}
+
+#under:hover {
+    color: rgb(201, 152, 156);
+}

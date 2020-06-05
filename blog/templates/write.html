@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}<link href="{% static 'css/write.css' %}" type="text/css" rel="stylesheet">{% endblock %}
+
+{% block content %}
+    <div class="text">
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                <h1>글 쓰기</h1>
+                <hr><br>
+                <p>제목</p>
+                {{form.title}}
+                <br><br>
+                <p>본문</p>
+                {{form.body}}
+            </table>
+            <br><br>
+            <input class="btn" type="submit" value="제출하기">
+        </form>
+    </div>
+{% endblock %}
